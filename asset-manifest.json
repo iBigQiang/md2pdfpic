@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/md2pdfpic/static/css/main.6a18af69.chunk.css",
+    "main.js": "/md2pdfpic/static/js/main.e774425e.chunk.js",
+    "main.js.map": "/md2pdfpic/static/js/main.e774425e.chunk.js.map",
+    "runtime-main.js": "/md2pdfpic/static/js/runtime-main.128eb0ac.js",
+    "runtime-main.js.map": "/md2pdfpic/static/js/runtime-main.128eb0ac.js.map",
+    "static/css/2.ad187f9c.chunk.css": "/md2pdfpic/static/css/2.ad187f9c.chunk.css",
+    "static/js/2.15736ca4.chunk.js": "/md2pdfpic/static/js/2.15736ca4.chunk.js",
+    "static/js/2.15736ca4.chunk.js.map": "/md2pdfpic/static/js/2.15736ca4.chunk.js.map",
+    "static/css/3.615a03aa.chunk.css": "/md2pdfpic/static/css/3.615a03aa.chunk.css",
+    "static/js/3.000c9f82.chunk.js": "/md2pdfpic/static/js/3.000c9f82.chunk.js",
+    "static/js/3.000c9f82.chunk.js.map": "/md2pdfpic/static/js/3.000c9f82.chunk.js.map",
+    "static/js/4.4c2b5f36.chunk.js": "/md2pdfpic/static/js/4.4c2b5f36.chunk.js",
+    "static/js/4.4c2b5f36.chunk.js.map": "/md2pdfpic/static/js/4.4c2b5f36.chunk.js.map",
+    "index.html": "/md2pdfpic/index.html",
+    "precache-manifest.98d6ee7d369538319f8b23d0f1e96ce6.js": "/md2pdfpic/precache-manifest.98d6ee7d369538319f8b23d0f1e96ce6.js",
+    "service-worker.js": "/md2pdfpic/service-worker.js",
+    "static/css/2.ad187f9c.chunk.css.map": "/md2pdfpic/static/css/2.ad187f9c.chunk.css.map",
+    "static/css/3.615a03aa.chunk.css.map": "/md2pdfpic/static/css/3.615a03aa.chunk.css.map",
+    "static/css/main.6a18af69.chunk.css.map": "/md2pdfpic/static/css/main.6a18af69.chunk.css.map",
+    "static/js/2.15736ca4.chunk.js.LICENSE.txt": "/md2pdfpic/static/js/2.15736ca4.chunk.js.LICENSE.txt",
+    "static/js/3.000c9f82.chunk.js.LICENSE.txt": "/md2pdfpic/static/js/3.000c9f82.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.128eb0ac.js",
+    "static/css/3.615a03aa.chunk.css",
+    "static/js/3.000c9f82.chunk.js",
+    "static/css/main.6a18af69.chunk.css",
+    "static/js/main.e774425e.chunk.js"
+  ]
+}
