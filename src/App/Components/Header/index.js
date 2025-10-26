@@ -40,7 +40,7 @@ const Header = ({ className }) => {
         title="github-button"
         className="project"
         style={{ display: "block" }}
-        src="https://ghbtns.com/github-btn.html?user=realdennis&repo=md2pdfpic&type=star&count=true"
+        src="https://ghbtns.com/github-btn.html?user=ibigqiang&repo=md2pdfpic&type=star&count=true"
         frameBorder="0"
         scrolling="0"
         width="100px"
