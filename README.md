@@ -1,67 +1,69 @@
 # md2pdfpic
 
+[English](./README_en.md) | 简体中文 | [繁體中文](./README_tc.md)
+
 ![Deploy gh-pages](https://github.com/iBigQiang/md2pdfpic/actions/workflows/deploy.yaml/badge.svg)
 
-Enhanced Markdown to PDF converter with long image export feature.
+增强版 Markdown 转 PDF 转换器，支持长图导出功能。
 
-**Live Demo:** https://iBigQiang.github.io/md2pdfpic/
+**在线演示：** https://iBigQiang.github.io/md2pdfpic/
 
-## Features
+## 功能特性
 
-- ✅ **Markdown to PDF**: Convert your Markdown documents to PDF format
-- ✅ **Long Image Export**: NEW! Export your Markdown as a long image (PNG format)
-- ✅ **Live Preview**: Real-time preview of your Markdown content
-- ✅ **Syntax Highlighting**: Code blocks with syntax highlighting
-- ✅ **File Import**: Import existing Markdown files
-- ✅ **Responsive Design**: Works on desktop and mobile devices
+- ✅ **Markdown 转 PDF**：将 Markdown 文档转换为 PDF 格式
+- ✅ **长图导出**：全新功能！将 Markdown 导出为长图（PNG 格式）
+- ✅ **实时预览**：Markdown 内容的实时预览
+- ✅ **语法高亮**：代码块语法高亮显示
+- ✅ **文件导入**：导入现有的 Markdown 文件
+- ✅ **响应式设计**：支持桌面端和移动端设备
 
-## New in This Version
+## 版本新特性
 
-This is an enhanced version of the original md2pdf project with the following improvements:
+这是原始 md2pdf 项目的增强版本，包含以下改进：
 
-1. **Long Image Export**: Added the ability to export Markdown content as a long image using html2canvas
-2. **Improved UI**: Redesigned header with three distinct action buttons:
-   - 📁 **Import**: Import Markdown files
-   - 📄 **Export as PDF**: Convert to PDF format
-   - 🖼️ **Export as Long Image**: Convert to image format
-3. **Better User Experience**: Streamlined interface without dropdown menus
+1. **长图导出**：使用 html2canvas 添加了将 Markdown 内容导出为长图的功能
+2. **界面优化**：重新设计的头部，包含三个独立的操作按钮：
+   - 📁 **导入**：导入 Markdown 文件
+   - 📄 **导出为 PDF**：转换为 PDF 格式
+   - 🖼️ **导出为长图**：转换为图片格式
+3. **更好的用户体验**：简化的界面，无下拉菜单
 
-## Usage
+## 使用方法
 
-1. **Write or Import**: Type your Markdown content in the left panel or import an existing file
-2. **Preview**: See the live preview in the right panel
-3. **Export**: Choose your preferred export format:
-   - Click "导出为PDF" to save as PDF
-   - Click "导出为长图" to save as a long image
+1. **编写或导入**：在左侧面板中输入 Markdown 内容或导入现有文件
+2. **预览**：在右侧面板中查看实时预览
+3. **导出**：选择您喜欢的导出格式：
+   - 点击"导出为PDF"保存为 PDF 格式
+   - 点击"导出为长图"保存为长图格式
 
-## Technology Stack
+## 技术栈
 
 - React 16.14.0
 - styled-components
-- react-remarkable (Markdown parsing)
-- highlight.js (Syntax highlighting)
-- html2canvas (Image export)
-- CodeMirror (Editor)
-- github-markdown-css (Styling)
+- react-remarkable (Markdown 解析)
+- highlight.js (语法高亮)
+- html2canvas (图片导出)
+- CodeMirror (编辑器)
+- github-markdown-css (样式)
 
-## Development
+## 开发
 
 ```bash
-# Install dependencies
+# 安装依赖
 npm install
 
-# Start development server
+# 启动开发服务器
 npm start
 
-# Build for production
+# 构建生产版本
 npm run build
 ```
 
-## License
+## 许可证
 
 MIT License
 
-## Credits
+## 致谢
 
-Based on the original [md2pdf](https://github.com/realdennis/md2pdf) project by realdennis.
-Enhanced with long image export functionality by iBigQiang.
+基于 realdennis 的原始 [md2pdf](https://github.com/realdennis/md2pdf) 项目。
+由 iBigQiang 增强，添加了长图导出功能。
