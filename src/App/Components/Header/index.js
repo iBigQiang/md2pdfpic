@@ -35,7 +35,7 @@ const Header = ({ className }) => {
   };
   return (
     <header className={className + " no-print"}>
-      <p className="project"> md2pdf </p>
+      <p className="project"> md2pdfpic </p>
       <iframe
         title="github-button"
         className="project"
