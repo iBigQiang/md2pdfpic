@@ -1,17 +1,27 @@
 {
-  "name": "md2pdf",
-  "version": "0.0.1",
-  "description": "",
+  "name": "md2pdfpic",
+  "version": "1.0.0",
+  "description": "Enhanced Markdown to PDF converter with long image export feature",
   "keywords": [
     "markdown",
-    "pdf"
+    "pdf",
+    "image",
+    "export",
+    "converter"
   ],
-  "homepage": "./",
+  "homepage": "https://iBigQiang.github.io/md2pdfpic/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iBigQiang/md2pdfpic.git"
+  },
+  "author": "iBigQiang",
+  "license": "MIT",
   "main": "src/index.js",
   "dependencies": {
     "codemirror": "^5.65.0",
     "github-markdown-css": "3.0.1",
     "highlight.js": "9.15.8",
+    "html2canvas": "^1.4.1",
     "nonaction": "0.0.5",
     "normalize.css": "8.0.1",
     "react": "^16.14.0",

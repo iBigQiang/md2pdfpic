@@ -1,48 +1,67 @@
-![Deploy gh-pages](https://github.com/realdennis/md2pdf/actions/workflows/deploy.yaml/badge.svg)
+# md2pdfpic
 
-# Markdown2PDF 
-English | [简体中文(Simplified Chinese)](./README_cn.md) | [繁體中文(Traditional Chinese)](./README_tc.md)  
-https://realdennis.github.io/md2pdf/
+![Deploy gh-pages](https://github.com/iBigQiang/md2pdfpic/actions/workflows/deploy.yaml/badge.svg)
 
+Enhanced Markdown to PDF converter with long image export feature.
 
-![It just works!](https://media.giphy.com/media/MuAtuqUGnn2PKsXhs6/giphy.gif)
+**Live Demo:** https://iBigQiang.github.io/md2pdfpic/
 
-![Upload](https://media.giphy.com/media/cZ1f4b46P3LGszuXuy/giphy.gif)
+## Features
 
-> Awesome Markdown to PDF!
-```diff
-- Online? Upload resume.md to stranger server?
-+ Try Offline Web App!
+- ✅ **Markdown to PDF**: Convert your Markdown documents to PDF format
+- ✅ **Long Image Export**: NEW! Export your Markdown as a long image (PNG format)
+- ✅ **Live Preview**: Real-time preview of your Markdown content
+- ✅ **Syntax Highlighting**: Code blocks with syntax highlighting
+- ✅ **File Import**: Import existing Markdown files
+- ✅ **Responsive Design**: Works on desktop and mobile devices
+
+## New in This Version
+
+This is an enhanced version of the original md2pdf project with the following improvements:
+
+1. **Long Image Export**: Added the ability to export Markdown content as a long image using html2canvas
+2. **Improved UI**: Redesigned header with three distinct action buttons:
+   - 📁 **Import**: Import Markdown files
+   - 📄 **Export as PDF**: Convert to PDF format
+   - 🖼️ **Export as Long Image**: Convert to image format
+3. **Better User Experience**: Streamlined interface without dropdown menus
+
+## Usage
+
+1. **Write or Import**: Type your Markdown content in the left panel or import an existing file
+2. **Preview**: See the live preview in the right panel
+3. **Export**: Choose your preferred export format:
+   - Click "导出为PDF" to save as PDF
+   - Click "导出为长图" to save as a long image
+
+## Technology Stack
+
+- React 16.14.0
+- styled-components
+- react-remarkable (Markdown parsing)
+- highlight.js (Syntax highlighting)
+- html2canvas (Image export)
+- CodeMirror (Editor)
+- github-markdown-css (Styling)
+
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+
+# Build for production
+npm run build
 ```
 
-## How to use md2pdf?
-1. Click button choose `.md` file.
-2. Edit in editor (left panel).
-3. Click **Transform**!
-4. Switch 'Destination' to **Save as PDF**.
-4. **Chrome recommended**
+## License
 
-## Using Docker
+MIT License
 
-1. Install docker on your platform
-2. Clone the repository
-3. `cd` into `md2pdf`
-4. Run `docker compose up -d` inside the directory
+## Credits
 
-The docker compose binds the web server to `localhost:8080` by default. You can change this by finding the `ports` line in `docker-compose.yaml`.
-
-**Note**: This docker compose uses the build directive, so your system will go build and optimize the code itself.
-The application is hosted locally through nginx which is what binds to port 8080.
-
-## Tips
-- `Resize` the layout what you want.
-- After click `Transform` button, inverse the checkbox of **'Headers and Footers'**. 
-- **反選頁首與頁尾**.
-
-## What's special?
-- You can use <span style="color:#0984e3">html</span> tag!
-<blockquote>Hey I'm in blockquote!</blockquote>
-
----
-
-LICENSE MIT © 2019 realdennis
+Based on the original [md2pdf](https://github.com/realdennis/md2pdf) project by realdennis.
+Enhanced with long image export functionality by iBigQiang.

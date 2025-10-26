@@ -40,10 +40,7 @@ export default props => {
           cursor: 'pointer'
         }}
       />
-      <span role="img" aria-label="upload">
-        📁
-      </span>
-      <span>Choose</span>
+      {props.children}
     </p>
   );
 };

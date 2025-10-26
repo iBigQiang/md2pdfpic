@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import UploadButton from "./Upload.js";
+import { exportAsLongImage } from "../../Lib/exportImage.js";
 const Header = ({ className }) => {
-  const onTransfrom = () => {
+  const onExportPDF = () => {
     // get the file name
     let candidateTitle = "";
     const previewEl = document.querySelector(".preview");
@@ -20,6 +21,18 @@ const Header = ({ className }) => {
     }
     window.print();
   };
+
+  const onExportAsImage = async () => {
+    // 获取文件名
+    let filename = "markdown-export";
+    const previewEl = document.querySelector(".preview");
+    const candidateTitleEl = previewEl.querySelector("h1");
+    if (candidateTitleEl) {
+      filename = candidateTitleEl.innerText.replace(/[^a-zA-Z0-9\u4e00-\u9fa5]/g, '-');
+    }
+    
+    await exportAsLongImage(filename);
+  };
   return (
     <header className={className + " no-print"}>
       <p className="project"> md2pdf </p>
@@ -35,12 +48,23 @@ const Header = ({ className }) => {
       />
 
       <div className="menu">
-        <UploadButton className="button upload" />
-        <p className="button download" onClick={onTransfrom}>
-          <span role="img" aria-label="download">
-            🎉
+        <UploadButton className="button upload">
+          <span role="img" aria-label="upload">
+            📁
           </span>
-          <span>Transform</span>
+          <span>导入MD文件</span>
+        </UploadButton>
+        <p className="button export-pdf" onClick={onExportPDF}>
+          <span role="img" aria-label="pdf">
+            📄
+          </span>
+          <span>导出为PDF</span>
+        </p>
+        <p className="button export-image" onClick={onExportAsImage}>
+          <span role="img" aria-label="image">
+            🖼️
+          </span>
+          <span>导出为长图</span>
         </p>
       </div>
       {/* <span className="author">Powered by @realdennis</span> */}
@@ -75,16 +99,47 @@ export default styled(Header)`
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 8px;
     .button {
       height: 80%;
       margin: 0;
       display: flex;
       align-items: center;
-      margin-left: 3px;
       border-radius: 3px;
       border: 1px solid black;
-      padding: 10px;
+      padding: 8px 12px;
       cursor: pointer;
+      font-size: 14px;
+      background: white;
+      transition: all 0.2s ease;
+      &:hover {
+        background-color: #f0f0f0;
+        transform: translateY(-1px);
+      }
+      span:first-child {
+        margin-right: 6px;
+      }
+    }
+    .upload {
+      background-color: #e3f2fd;
+      border-color: #2196f3;
+      &:hover {
+        background-color: #bbdefb;
+      }
+    }
+    .export-pdf {
+      background-color: #fff3e0;
+      border-color: #ff9800;
+      &:hover {
+        background-color: #ffe0b2;
+      }
+    }
+    .export-image {
+      background-color: #f3e5f5;
+      border-color: #9c27b0;
+      &:hover {
+        background-color: #e1bee7;
+      }
     }
   }
 
